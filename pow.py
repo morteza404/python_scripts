@@ -1,27 +1,7 @@
-# import hashlib
-
-# data = ["ali","reza","hassan","saeid"]
-
-# nonce = 1000
-
-# while True:    
-
-#     for item in data:
-
-#         item += str(nonce)
-
-#         hash = hashlib.sha256(item.encode()).hexdigest()
-
-#         if hash[-4:] == "1111":
-#             print(item, hash)
-#             nonce += 1
-
-#         break    
-
 import hashlib
 import time
 
-name = "ali"
+name = "simpletext"
 
 nonce = 1
 
