@@ -8,10 +8,11 @@ print(hashobj)
 # int(obj, 16) : convert hex to decimal 
 print(int(hashobj,16))
 print(int(hashobj,16) % 25)
+print(int(hashobj,16) % (2 ** 32))
 
 
 
 # for bit operation (like shift) we need struct
-data = struct.unpack_from(">I", hashobj)[0]
-print(data)
-print(data >> 2)
+# data = struct.unpack_from(">I", hashobj)[0]
+# print(data)
+# print(data >> 2)
