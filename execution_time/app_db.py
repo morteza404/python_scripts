@@ -50,6 +50,6 @@ if __name__ == "__main__":
     for i in range(NUMBER):
         insert("Alex", "LA")
     end = time.time()
-    with open("result.csv","a") as target:
+    with open("results.csv","a") as target:
         target.write(str(NUMBER) + "," + str(end - start) + "\n")        
     # read(3)

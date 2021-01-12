@@ -1,7 +1,6 @@
 import sqlite3
 import time
-
-NUMBER = 1
+import subprocess
 
 def db_connection():
     return sqlite3.connect("test2.db")
@@ -47,7 +46,7 @@ def read(id):
 if __name__ == "__main__":
     # create() 
        
-    for i in range(0, 101, 10):
+    for i in range(0, 10001, 1000):
         start = time.time()        
         insert("Alex", "LA")
         end = time.time()
@@ -65,5 +64,7 @@ if __name__ == "__main__":
             target.write(str(i) + "," + str(end - start) + "\n")
         print(f"loop {i} end.")
         time.sleep(1)
+
+    subprocess.run(["shutdown", "-h", "now"])
 
     # read(3)
