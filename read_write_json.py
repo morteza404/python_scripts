@@ -1,4 +1,5 @@
 import json
+from pprint import pprint
 
 data = {"name" : "morteza", "age" : 29, "city" : "tehran"}
 
@@ -23,4 +24,4 @@ if __name__ == "__main__":
 
     # write_json(data, "test.json")
 
-    print(read_json("test.json"))
+    pprint(read_json("test.json"))
