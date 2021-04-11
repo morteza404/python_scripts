@@ -24,3 +24,13 @@ def calculate_time(function):
         end = time()
         print(f"{function.__name__} taken {end - start} seconds.")
     return wrapper
+
+
+# decorator with arguments
+def add_word(word):
+    def middle(function):
+        def wrapper(*args):
+            return function(*args) + word
+        return wrapper
+    return middle
+
