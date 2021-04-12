@@ -1,4 +1,4 @@
-from decorators import add_word, do_twice, pow_even_two, multiply, calculate_time
+from decorators import add_word, do_twice, mul_10, pow_even_two, multiply, calculate_time
 
 
 @do_twice
@@ -29,4 +29,10 @@ def say_bye():
     return "good "
 
 
-print(say_bye())
+# print(say_bye())
+
+@mul_10(10)
+def add_2(num1, num2):
+    return num1 + num2
+
+print(add_2(2,3))

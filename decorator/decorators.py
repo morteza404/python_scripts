@@ -34,3 +34,10 @@ def add_word(word):
         return wrapper
     return middle
 
+# decorator with arguments
+def mul_10(num):
+    def middle(function):
+        def wrapper(*args):
+            return function(*args) * num
+        return wrapper
+    return middle
