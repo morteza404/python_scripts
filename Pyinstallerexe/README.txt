@@ -1,0 +1,1 @@
+pyinstaller tktest.py -F

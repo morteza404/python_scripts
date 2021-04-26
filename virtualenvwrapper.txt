@@ -1,0 +1,13 @@
+1.install(windows)
+	-pip install virtualenvwrapper-win
+2.create virtualenv
+	-mkvirtualenv <ENV_name>
+3.list of venvs
+	-lsvirtualenv
+	-workon
+4.delete venv
+	-rmvirtualenv <ENV_name>
+5.select venv
+	-workon <ENV_name>
+6.deactive venv
+	-deactivate

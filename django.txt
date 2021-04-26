@@ -1,0 +1,10 @@
+001.pip install virtualenv
+002.pip install virtualenvwrapper-win
+01.mkvirtualenv <env>
+02.(env) pip install django
+03.django-admin startproject <proj>
+04.cd <proj>
+05.python manage.py createsuperuser
+06.python manage.py migrate
+07.python manage.py runserver
+08.python manage.py startapp <app>
