@@ -1,0 +1,9 @@
+the regular_io taken time is : 0.6683013439178467 seconds.
+the mmap_io taken time is : 0.6172182559967041 seconds.
+the regular_io taken time is : 1.4545135498046875 seconds.
+the mmap_io taken time is : 1.2485849857330322 seconds.
+the regular_io taken time is : 2.826815605163574 seconds.
+the mmap_io taken time is : 2.3118510246276855 seconds.
+the regular_io taken time is : 11.360580205917358 seconds.
+the mmap_io taken time is : 9.37333631515503 seconds.
+the mmap_io taken time is : 0.02123737335205078 seconds.
