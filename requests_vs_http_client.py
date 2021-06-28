@@ -5,6 +5,15 @@ import requests
 # python3 -m http.server
 # http.client is so much faster than requests
 
+###
+The reason Requests is slower is because it does substantially more than httplib. 
+httplib can be thought of as the bottom layer of the stack: 
+it does the low-level wrangling of sockets. 
+Requests is two layers further up, and adds things like cookies, 
+connection pooling, additional settings, and kinds of other fun things. 
+This is necessarily going to slow things down. We simply have to compute a lot more than httplib does
+###
+
 conn = HTTPConnection(host="0.0.0.0", port=8000)
 
 for i in range(1000):
