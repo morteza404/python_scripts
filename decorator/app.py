@@ -36,3 +36,7 @@ def add_2(num1, num2):
     return num1 + num2
 
 print(add_2(2,3))
+
+@calculate_time
+def mul_1024():
+    print(pow(2,25) * 1024)
