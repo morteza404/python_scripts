@@ -28,3 +28,17 @@ pt2 = Point(4,5)
 line_length = sqrt((pt1.x-pt2.x)**2 + (pt1.y-pt2.y)**2)
 
 print(line_length)
+
+
+
+Person = namedtuple("Person", "name children")
+john = Person("John Doe", ["Timmy", "Jimmy"])
+
+Person(name='John Doe', children=['Timmy', 'Jimmy'])
+print(id(john.children))
+
+
+john.children.append("Tina")
+
+Person(name='John Doe', children=['Timmy', 'Jimmy', 'Tina'])
+print(id(john.children))
