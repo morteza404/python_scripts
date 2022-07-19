@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 
+import aiohttp
 import asyncio
 import time
-import aiohttp
-
 
 async def download_site(session, url):
     async with session.get(url) as response:
-        print("Read {0} from {1}".format(response.content_length, url))
+        print(f"Read {response.content_length} from {url}")
 
 
 async def download_all_sites(sites):
@@ -20,12 +19,8 @@ async def download_all_sites(sites):
 
 
 if __name__ == "__main__":
-    sites = [
-        "https://www.jython.org",
-        "http://olympus.realpython.org/dice",
-    ] * 80
-    start_time = time.time()
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(download_all_sites(sites))
-    duration = time.time() - start_time
+    sites = ["https://www.jython.org", "http://olympus.realpython.org/dice"]*80
+    start_time = time.time()    
+    asyncio.run(download_all_sites(sites))
+    duration = time.time()-start_time
     print(f"Downloaded {len(sites)} sites in {duration} seconds")
