@@ -5,10 +5,8 @@ async def async_func(task_no):
     await asyncio.sleep(1)
     print(f"{task_no}...Blog!")
 
-async def main():    
-    tasks = []
-    for i in range(3):
-        tasks.append(async_func(i))
+async def main():
+    tasks = [async_func(i) for i in range(3)]
     await asyncio.gather(*tasks)
 
 if __name__ == "__main__":
